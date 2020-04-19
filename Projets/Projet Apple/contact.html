@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Pêche - Contact</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Icône -->
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/navbar.js"></script>
+
+		<script type="text/javascript" src="js/satisfaction.js"></script>
+	</head>
+	<body class="contact">
+
+		<!-- Fond sombre (assombrir l'image de fond) -->
+		<div class="fond-sombre"></div>
+
+		<nav id="navbar">
+			<ul>
+				<li id="logo"><a href="index.html"><img src="images/logo.png"></a></li>
+				<li><a href="apple.html">Apple</a></li>
+				<li><a href="imac.html">iMac</a></li>
+				<li><a href="macbook-pro.html">Macbook Pro</a></li>
+				<li><a href="comparatif.html">Comparatif</a></li>
+				<li><a href="a-propos.html">A propos</a></li>
+				<li><a href="#">Nous contacter</a></li>
+			</ul>
+		</nav>
+
+		<br/>
+
+		<form class="contact">
+			<label>Nom : </label><br/>
+			<input type="text" name="nom" placeholder="Votre nom"><br/><br/>
+
+			<label>Mail : </label><br/>
+			<input type="email" name="mail" placeholder="mail@mail.fr"><br/><br/>
+
+			<label>Numéro de téléphone : </label><br/>
+			<input type="tel" name="telephone" placeholder="0601020304"><br/><br/>
+
+			<label onclick="changeCouleur('ts');" class="satisfaction" id="ts">Très satisfait</label>
+			<label onclick="changeCouleur('s');" class="satisfaction" id="s">Satisfait</label>
+			<label onclick="changeCouleur('n');" class="satisfaction" id="n">Neutre</label>
+			<label onclick="changeCouleur('p');" class="satisfaction" id="p">Peu</label>
+			<label onclick="changeCouleur('pdt');" class="satisfaction" id="pdt">Pas du tout</label><br/>
+
+			<br/>
+
+			<textarea></textarea><br/>
+
+				<input type="submit" name="submit">
+		</form>
+	</body>
+</html>

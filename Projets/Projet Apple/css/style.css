@@ -1,0 +1,387 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+/* CSS pour toutes les pages */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 300;
+	color: #333;
+}
+
+.fond-sombre {
+	display: block;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+/* Barre de navigation */
+
+nav {
+	background-color: #313131;
+	text-align: center;
+	padding: 1px;
+	position: fixed;
+	width: 100%;
+	transition: opacity 1s, font-size 0.5s, visibility 1s;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0px 30px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	transition: 0.1s color;
+}
+
+nav ul li a:hover {
+	color: #666;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+nav ul li a img {
+	height: 24px;
+	width: auto;
+	vertical-align: middle;
+	transition: 0.1s filter;
+}
+
+nav ul li a img:hover {
+	filter: brightness(50%);
+}
+
+/* Page d'accueil */
+
+.index-container1 {
+	margin-top: 70px;
+	text-align: center;
+	transition: margin-top 2s;
+}
+
+
+
+.index-containers {
+	background: #eee;
+	margin-top: 80px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.index-containers table td {
+	text-align: center;
+}
+
+.index-containers table td img {
+	width: 100%;
+}
+/* Page présentation Apple et Steve Jobs */
+
+article {
+	margin-top: 100px;
+	text-align: justify;
+	width: 80%;
+	box-shadow: 0px 0px 5px #AAA;
+	border-radius: 10px;
+	padding: 50px;
+	transition: box-shadow 0.5s;
+	font-family: "Open Sans", Verdana, sans-serif;
+	font-size: 18px;
+}
+
+article:hover {
+	box-shadow: 0px 5px 5px #AAA;
+}
+
+article.apple table img {
+	box-shadow: 0px 5px 5px #AAA;
+	transition: box-shadow 1s;
+}
+
+article.apple table img:hover {
+	box-shadow: 0px 10px 10px #AAA;
+}
+
+article.SWOT h1 {
+	text-align: center;
+	text-shadow: -2px 2px 5px #aaa;
+}
+
+article.SWOT table {
+	font-size: 16px;
+}
+
+article.SWOT table td {
+	padding-right: 50px;
+	border: 1px solid #eee;
+}
+
+article.SWOT table th {
+	border: 1px solid #aaa;
+	background-color: #aaa;
+}
+
+article table tr td.steve-jobs-image {
+	width: 1%;
+}
+
+article table tr td.steve-jobs-image img {
+	border: none;
+}
+
+article table tr td.steve-jobs-desc {
+	vertical-align: top;
+	padding-left: 20px;
+
+}
+
+article img.mySlides {
+	width: 70%;
+	box-shadow: 0px 5px 5px #AAA;
+}
+
+/* Pages de l'iMac et du Macbook Pro */
+/* Basés sur la même présentation */
+
+.presentation {
+	text-align: center;
+	margin-top: 200px;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.presentation h1 {
+	color: #fff;
+	text-shadow: 0px 0px 2px #eee;
+}
+
+.presentation hr {
+	width: 10%;
+}
+
+.presentation h2 {
+	margin-top: 50px;
+	color: #fff;
+	text-shadow: 0px 0px 2px #eee;
+}
+
+.fond-sombre-produits {
+	display: block;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 4s;
+}
+
+a.comparatif {
+	text-decoration: none;
+	color: #eee;
+	padding: 20px 10px;
+	font-size: 20px;
+	border: 2px solid #eee;
+	transition: box-shadow 0.2s, color 0.2s, background-color 0.2s;
+	border-radius: 10px;
+}
+
+a.comparatif:hover {
+	box-shadow: 0px 0px 5px #eee;
+	background-color: #eee;
+	color: #333;
+}
+
+/* Page de l'iMac */
+
+body.imac {
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	background: url("../images/fonds/imac.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* Page du Macbook Pro */
+
+body.macbook-pro {
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	background: url("../images/fonds/macbook-pro.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* Page de comparaison */
+
+table.comparatif {
+	margin-top: 70px;
+	text-align: justify;
+}
+
+table.comparatif img {
+	width: 60%;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	width: 40%;
+	padding: 10px 50px;
+	border-bottom: 1px solid #eee;
+}
+
+td.categorie {
+	width: 10%;
+	font-weight: bold;
+	color: #666;
+}
+
+td.premier {
+	border-right: 1px solid #eee;
+}
+
+/* Page à propos */
+
+.about-container {
+	margin-top: 100px;
+}
+
+.about-container table td.texte {
+	text-align: justify;
+	font-size: 18px;
+	padding-right: 100px;
+}
+
+.about-container img.lycee {
+	width: 100%;
+}
+
+.about-container p {
+	text-align: justify;
+	width: 70%;
+}
+
+/* Page de contact */
+
+body.contact {
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	background: url("../images/fonds/contact.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+body.contact nav {
+	opacity: 0.8;
+}
+
+form.contact {
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #fff;
+	padding: 20px;
+}
+
+form.contact label {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+form.contact label.satisfaction {
+	border-radius: 10px;
+	transition: background-color 0.5s, border 0.5s, color 0.2s;
+	font-weight: 400;
+}
+
+form.contact label.satisfaction:hover {
+	cursor: pointer;
+}
+
+form.contact input[type="text"],
+form.contact input[type="email"],
+form.contact input[type="tel"],
+form.contact textarea {
+	width: 35%;
+	font-size: 18px;
+	padding: 10px;
+	background: none;
+	border: none;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	border-radius: 5px;
+	color: #fff;
+}
+
+form.contact textarea {
+	resize: vertical;
+	height: 100px;
+}
+
+form.contact input[type="submit"] {
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	background-color: transparent;
+	color: #ddd;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius : 5px;
+	box-shadow: 0px 0px 2px #ddd;
+	transition: box-shadow 0.2s;
+}
+
+form.contact input[type="submit"]:hover {
+	cursor: pointer;
+	box-shadow: 0px 2px 2px #ddd;
+}
+
+.go-top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 32px;
+	height: auto;
+}
